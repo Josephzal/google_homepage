@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" type="text/css">
+
+    <style>
+
+      .under:hover{
+        text-decoration: underline;
+        
+      }
+
+      a{
+        color: black;
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: none;
+      }
+
+      .center{
+        position: relative;
+        display: block;
+        margin: auto; 
+        text-align: center;
+        
+        }
+      
+      .logo{
+        position:relative;  
+        top: 200px;
+        width: 10;
+       
+      }
+
+      input[type="text"]:hover{
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.1), 2px 2px 2px rgba(0,0,0,0.1);
+      }
+
+      input[type="text"]{
+        position: relative;
+        display:block;
+        margin: 0 auto;
+        border-radius: 100px;
+        border: 1px solid #dfe1e5;;
+        top: 210px;
+        width: 470px;
+        padding: 5px; 
+        line-height: 30px;
+        text-indent: 30px; 
+        outline: none;
+      }
+
+      .smallSearch{
+        position: relative;
+        right: 110px;
+        top: 180px;
+        width: 19px;
+        filter: invert(65%);
+      }
+
+      .bottomNav{
+        position: fixed;
+        
+        bottom:0;
+      }
+
+      .navigation {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+
+      #lowNav1{
+        position: fixed;
+        bottom: 0px;
+      }
+
+      #lowNav2{
+        position: fixed;
+        bottom: 0px;
+        right: 50px;
+      }
+
+      #topNav2{
+        position: fixed;
+        top: 0px;
+        right: 150px;
+      }
+
+      a{
+        color: inherit;
+      }
+
+      #lowNav1 ul{
+        list-style:none;
+      }
+
+      #lowNav1 li{
+        display:inline-block;
+      }
+
+      #lowNav2 ul{
+        list-style:none;
+      }
+
+      #lowNav2 li{
+        display:inline-block;
+      }
+
+      #topNav1 ul{
+        list-style:none;
+      }
+
+      #topNav1 li{
+        display:inline-block;
+      }
+
+      #topNav2 ul{
+        list-style:none;
+      }
+
+      #topNav2 li{
+        display:inline-block;
+      }
+
+      #buttons{
+        position:relative;
+        top:230px;
+        background-color: white;
+        border: 1.5px solid transparent;
+        padding: 7px;
+        border-radius: 4px;
+        right: 10px;
+      }
+
+      #buttons:hover {
+        cursor: pointer;
+        border:1.5px solid rgb(208, 216, 218) !important;
+       
+      }
+
+      #appIcon {
+        position: fixed;
+        top: 15px;
+        right: 122px;
+        width: 25px;
+      }
+
+      #appIcon:hover {
+        cursor: pointer;
+      }
+
+      #signInButton {
+        position: fixed;
+        padding: 10px;
+        width: 90px;
+        top: 10px;
+        right: 15px;
+        background-color: rgb(0, 110, 255);
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: none;
+        border-radius: 4px;
+        font-size: 13px;
+        cursor:pointer;
+      }
+     
+
+      
+    </style>
+
+
+    </head>
+    <body>
+
+      <div class ="navigation" id="topNav1">
+        <ul>
+          <li class="under"><a href="#" style="font-size: 13px">About</a></li>
+          <li class="under"><a href="#" style="font-size: 13px">Store</a></li>
+        </ul>
+      </div>
+
+        <div class="navigation" id ="topNav2">
+        <ul>
+          <li class="under"><a href="#" style="font-size: 13px">Gmail</a></li>
+          <li class="under"><a href="#" style="font-size: 13px">Images</a></li>
+          <li class="under"><img src=https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png id="appIcon"></li>
+          <li class="under"><button id="signInButton" type="button">Sign In</button></li>
+        </ul>
+      </div> 
+     
+      <div class="center"> 
+        <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png class="logo">
+        <input name="search" type="text" size="70" height="30">
+        <img src=https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png class="smallSearch">
+        <button class="buttonsClick" id="buttons" type="button">Google Search</button> 
+        <button class="buttonsClick" id="buttons" type="button">I'm Feeling Lucky</button> 
+      </div> 
+
+  
+
+      
+      <div class="bottomNav" style="background-color: rgb(241, 241, 241); height: 50px; width: 110%">
+        
+        <div class="navigation" id ="lowNav1">
+          <ul>
+            <li class="under"><a href="#" style="font-size: 13px">Advertising</a></li>
+            <li class="under"><a href="#" style="font-size: 13px">Business</a></li>
+            <li class="under"><a href="#" style="font-size: 13px">How Search Works</a></li>
+          </ul>
+        </div>
+
+        <div class="navigation" id ="lowNav2">
+          <ul>
+            <li class="under"><a href="#" style="font-size: 13px">Privacy</a></li>
+            <li class="under"><a href="#" style="font-size: 13px">Terms</a></li>
+            <li class="under"><a href="#" style="font-size: 13px">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    
+    </body>
